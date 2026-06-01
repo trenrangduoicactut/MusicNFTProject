@@ -8,7 +8,7 @@ import UpdateMetadata from "./pages/UpdateMetadata";
 import RoyaltyInfo from "./pages/RoyaltyInfo";
 import TransferNFT from "./pages/TransferNFT";
 import ApprovalManager from "./pages/ApprovalManager";
-
+import MyCollection from "./pages/MyCollection";
 import TypingTitle from "./components/TypingTitle";
 
 import "./App.css";
@@ -40,6 +40,7 @@ function App() {
             <NavLink to="/royalty">Royalty Info</NavLink>
             <NavLink to="/transfer">Transfer Ownership</NavLink>
             <NavLink to="/approval">Approval Manager</NavLink>
+            <NavLink to="/collection">My Collection</NavLink>
             <NavLink to="/update">Update Metadata</NavLink>
           </nav>
 
@@ -129,6 +130,7 @@ function App() {
               <Route path="/royalty" element={<RoyaltyInfo />} />
               <Route path="/transfer" element={<TransferNFT />} />
               <Route path="/approval" element={<ApprovalManager />} />
+              <Route path="/collection" element={<MyCollection />} />
               <Route path="/update" element={<UpdateMetadata />} />
             </Routes>
           </section>
