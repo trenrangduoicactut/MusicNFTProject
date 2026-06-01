@@ -3,6 +3,8 @@ import MusicCopyrightNFT from "../MusicCopyrightNFT.json";
 
 const ENV_CONTRACT_ADDRESS = import.meta.env.VITE_MUSIC_NFT_ADDRESS;
 
+console.log("ENV_CONTRACT_ADDRESS:", ENV_CONTRACT_ADDRESS);
+
 function getContractAddress(chainId) {
   if (ENV_CONTRACT_ADDRESS) {
     return ENV_CONTRACT_ADDRESS;
