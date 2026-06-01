@@ -2,7 +2,8 @@ import { useState } from "react";
 import { getContract } from "../services/contract";
 import { createAudioFingerprint } from "../services/audioFingerprint";
 
-const BACKEND_URL = "http://localhost:5001";
+const BACKEND_URL =
+  import.meta.env.VITE_BACKEND_URL || "http://localhost:5001";
 
 function MintMusic() {
   const [account, setAccount] = useState("");
